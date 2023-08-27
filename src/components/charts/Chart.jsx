@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import "./chart.scss";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 
 const data = [
@@ -43,7 +43,7 @@ const data = [
 
 ];
 
-export const Chart = () => {
+ const Chart = () => {
   return (
     <div className='chart'>
       <div className='title'>Last 6 Months (Revenue)</div>
@@ -70,4 +70,6 @@ export const Chart = () => {
       </ResponsiveContainer>
     </div>
   )
-}
+};
+
+export default Chart;
