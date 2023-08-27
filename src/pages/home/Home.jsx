@@ -1,12 +1,12 @@
-import React from 'react'
 import "./home.scss";
-import { Sidebar } from '../../components/sidebar/Sidebar';
-import { Navbar } from '../../components/navbar/Navbar';
-import { Widget } from '../../components/widget/Widget';
-import { Featured } from '../../components/featured/Featured';
-import { Chart } from '../../components/charts/Chart';
+import Sidebar  from '../../components/sidebar/Sidebar';
+import Navbar  from '../../components/navbar/Navbar';
+import Widget  from '../../components/widget/Widget';
+import Featured  from '../../components/featured/Featured';
+import Chart  from '../../components/charts/Chart';
+import Table from "../../components/table/Table";
 
-export const Home = () => {
+ const Home = () => {
   return (
     <div className='home'>
         <Sidebar />
@@ -26,9 +26,12 @@ export const Home = () => {
         <div className="listContainer">
           <div className="listTitle">
             Latest Transactions
+            <Table />
           </div>
         </div>
         </div>
     </div>
   )
 }
+
+export default Home;
