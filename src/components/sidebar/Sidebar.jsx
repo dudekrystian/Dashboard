@@ -12,23 +12,33 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import {Link} from "react-router-dom";
 
 
-export const Sidebar = () => {
+const Sidebar = () => {
   return (
     <div className='sidebar'>
         <div className='top'>
+            <Link className='link' to="/" >
             <span className='logo'>Dashboard</span>
+            </Link>
             <hr></hr>
         </div>
         <div className='center'>
             <ul>
                 <p className="title">MAIN</p>
+                <Link className='link' to="/">
                 <li><DashboardIcon className='icon' /><span>Dashboard</span></li>
 
+                </Link>
+
                 <p className="title">LISTS</p>
+                <Link className='link' to="/users">
                 <li><PersonOutlineIcon className='icon' /><span>Users</span></li>
+                </Link>
+                <Link className='link' to="/products">
                 <li><StoreIcon className='icon'  /><span>Products</span></li>
+                </Link>
                 <li><CreditCardIcon className='icon'   /><span>Orders</span></li>
                 <li><LocalShippingIcon className='icon'   /><span>Delivery</span></li>
                 <p className="title">USEFUL</p>
@@ -53,3 +63,6 @@ export const Sidebar = () => {
     </div>
   )
 }
+
+
+export default Sidebar;
