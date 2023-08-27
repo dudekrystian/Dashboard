@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import "./widget.scss";
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
@@ -6,7 +6,7 @@ import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalance
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 
-export const Widget = ({type}) => {
+ const Widget = ({type}) => {
 
     let data;
 
@@ -82,4 +82,6 @@ export const Widget = ({type}) => {
         </div>
     </div>
   )
-}
+};
+
+export default Widget;

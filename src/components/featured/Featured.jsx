@@ -1,4 +1,3 @@
-import React from 'react'
 import "./featured.scss";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { CircularProgressbar } from "react-circular-progressbar";
@@ -7,7 +6,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 
 
-export const Featured = () => {
+ const Featured = () => {
     return (
         <div className="featured">
           <div className="top">
@@ -50,3 +49,5 @@ export const Featured = () => {
         </div>
       );
 }
+
+export default Featured;
